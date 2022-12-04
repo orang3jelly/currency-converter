@@ -6,7 +6,7 @@ Hi! I would like to present my third website created for the programming course 
 https://orang3jelly.github.io/currency-converter/
 
 # Quick look
-![website look](https://media.giphy.com/media/kL8bfUuJEUqEgGBOvX/giphy.gif)
+![website look](https://media.giphy.com/media/CxTyJxPaIxPzpubx5h/giphy.gif)
 
 # Technologies I used
 
