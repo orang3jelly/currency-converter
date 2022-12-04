@@ -11,5 +11,8 @@ box-sizing: inherit;}
     max-width: 700px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f6f6f6;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
