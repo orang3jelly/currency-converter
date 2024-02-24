@@ -1,7 +1,4 @@
-let inputElement = document.querySelector(".js-inputPLN");
-let currencyElement = document.querySelector(".js-selectCurrency");
 let formElement = document.querySelector(".js-form");
-
 
 const calculateResult = (input, currency) => {
   let rateEUR = 4.3463;
@@ -27,14 +24,18 @@ const calculateResult = (input, currency) => {
 const updateResultText = (input, result, currency) => {
   const resultElement = document.querySelector(".js-operation");
   resultElement.innerText = `${input} PLN = ${result.toFixed(2)} ${currency}`;
-}
+};
 
-formElement.addEventListener("submit", (event) => {
+const onFormSubmit = (event) => {
   event.preventDefault();
 
-  let input = +inputElement.value;
-  let currency = currencyElement.value;
-  let result;
+  const inputElement = document.querySelector(".js-inputPLN");
+  const currencyElement = document.querySelector(".js-selectCurrency");
 
-  
-});
+  const input = +inputElement.value;
+  const currency = currencyElement.value;
+
+  const result = calculateResult(input, currency);
+
+  updateResultText(input, result, currency);
+};
